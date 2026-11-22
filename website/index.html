@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>NFSMW-NX · Switch 2 installer</title>
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">UNOFFICIAL FAN PROJECT <span> / </span> EXPERIMENTAL PORT</p>
+      <h1>NFSMW<span>NX</span></h1>
+      <div class="subtitle">SWITCH 2 <span>//</span> INSTALLER</div>
+      <p class="intro">Get back on the road. Build a Switch 2 package from your own Xbox 360 game, right here in your browser.</p>
+      <div class="badges"><span>USA EDITION</span><span>NO GAME UPLOADS</span><span>v1.0.0</span></div>
+    </header>
+
+    <section class="notice"><strong>Before you start</strong>
+      <p>You need your own USA Xbox 360 copy and the Switch 2 release NRO. Your files never leave your computer. The port is experimental; stable 60 FPS and the release build are not yet verified.</p>
+    </section>
+
+    <section class="step">
+      <div class="step-number">01</div><div class="step-content">
+        <h2>Choose your game</h2>
+        <p>Select your disc image or the extracted folder containing <code>default.xex</code>, <code>NFS</code> and <code>Movies</code>.</p>
+        <div class="controls">
+          <label class="file-button">Choose ISO<input id="iso" type="file" accept=".iso"></label>
+          <label class="file-button secondary">Choose folder<input id="folder" type="file" webkitdirectory multiple></label>
+        </div>
+        <p id="game-status" class="status" aria-live="polite">No game selected.</p>
+      </div>
+    </section>
+    <section class="step">
+      <div class="step-number">02</div><div class="step-content">
+        <h2>Choose the Switch 2 NRO</h2>
+        <p><a href="https://github.com/githubuser77777/nfsmw-nx2/releases/download/1.0.0/nfsmw-nx-usa.nro">Download the USA Switch 2 NRO</a>, then select it here. It will be checked against the release fingerprint.</p>
+        <div class="controls"><label class="file-button secondary">Choose NRO<input id="nro" type="file" accept=".nro"></label></div>
+        <p id="nro-status" class="status" aria-live="polite">No NRO selected.</p>
+      </div>
+    </section>
+    <section class="step">
+      <div class="step-number">03</div><div class="step-content">
+        <h2>Create your package</h2>
+        <p>The installer generates and checks the shaders, then saves a ZIP. Use a current desktop Chrome or Edge; several GB of free space may be needed.</p>
+        <div class="controls"><button id="create" disabled>Create package <span>→</span></button><button id="update" class="secondary" disabled>Update only</button></div>
+        <progress id="progress" max="1" value="0" hidden></progress>
+        <div id="log" class="log" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+    <section class="step last">
+      <div class="step-number">04</div><div class="step-content">
+        <h2>Copy to your Switch 2</h2>
+        <p>Extract the ZIP into <code>sdmc:/switch/</code>. Launch the homebrew menu using title takeover (hold R while opening a game), then start <code>nfsmw-nx</code>.</p>
+      </div>
+    </section>
+    <footer><p>Based on the <a href="https://github.com/StevensND/nfsmw-nx-installer">original installer</a> by StevensND · <a href="https://github.com/githubuser77777/nfsmw-nx2">Switch 2 source</a> · <a href="UPSTREAM-NOTICES.md">Notices</a> · <a href="LICENSE">GPL-3.0</a></p>
+      <p>Unofficial fan project. Not affiliated with or endorsed by EA, Nintendo or Microsoft. Game files stay on your device.</p></footer>
+  </main>
+  <script type="module" src="app.js?v=3"></script>
+</body>
+</html>

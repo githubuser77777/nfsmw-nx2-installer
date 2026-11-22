@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "builds": [
+    {
+      "edition": "USA",
+      "xex_sha256": "aebdf3c14d1e4e4ed2c130d94bc1a0e97bd6d5bf39bdfdef33c3909c9cc4ba4c",
+      "image_sha256": "e0002893223a1425e9cd760171921689007093b03ad3d597e156d4c15de09618",
+      "nro": "nfsmw-nx-usa.nro",
+      "nro_sha256": "e91fc0b53668501d4d80a5ab19aa1b8256953ce0611919998f8209d7ec6b79c3",
+      "disc": { "NFS/ZZDATA0.BIN": 381569024 },
+      "library_size": 3010284,
+      "library_sha256": "98be11483f9169432b4c97ea34f46b2fc1ee0528a4ff41f08c6cfe7ca013caf0",
+      "blur_container_sha256": "e80cca037bd4becd8a192daa4583e3a3a9281e06436015746583f30701a296f9"
+    }
+  ]
+}
